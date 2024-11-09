@@ -1,0 +1,77 @@
+ 
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      background-image: url('./smv.jpeg'); /* Set background image */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center;
+    }
+    
+    .page {
+      width: 400px;
+      background-color: rgba(250, 235, 215, 0.9); /* Semi-transparent background */
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for visibility */
+      margin-top: 50px;
+      display: flex; /* Use flexbox to layout content */
+      flex-direction: column; /* Align children vertically */
+      align-items: center; /* Center children horizontally */
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+    
+    .login-input-fields {
+      width: 100%; /* Align with other page sections */
+    }
+    
+    .login-input-fields label {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: large;
+      margin-top: 15px;
+    }
+    
+    input, textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: large;
+      border-radius: 15px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+    
+    button {
+      width: 50%;
+      padding: 10px;
+      margin: 20px auto 0;
+      font-size: 15px;
+      background-color: aquamarine;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #76e3b1;
+    }
+    
+    /* Specific styling for complaint textarea */
+    #complaint-page textarea {
+      resize: none; /* Disable resizing */
+    }
+    

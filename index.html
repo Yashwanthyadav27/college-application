@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Complaint Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="login-page" class="page">
+    <h2 id="log">Login</h2>
+    <div class="login-input-fields">
+      <label for="">User Name:</label>
+    <input type="text" id="username" placeholder="" required>
+    <label for="">Email Id:</label>
+    <input type="email" id="email" placeholder="" required>
+    <label for="">Password:</label>
+    <input type="password" id="password" placeholder="" required>
+    <button onclick="login()" id="login">Login</button>
+    </div>
+  </div>
+
+  <div id="student-details-page" class="page" style="display: none;">
+    <h2>Enter Student Details</h2>
+   <div class="login-input-fields">
+    <label for="">Enter USN:</label>
+    <input type="text" id="usn" placeholder="" required>
+    <label for="">Enter Branch:</label>
+    <input type="text" id="branchName" placeholder="" required>
+    <label for="">Enter Semester:</label>
+    <input type="text" id="semester" placeholder="" required>
+    <button onclick="submitStudentDetails()">Next</button>
+   </div>
+  </div>
+
+  <div id="complaint-page" class="page" style="display: none;">
+    <h2>Complaint Page</h2>
+    <div class="login-input-fields">
+      <label for="">Enter Your Complaint:</label>
+      <textarea id="complaint" placeholder="Enter Your Complaint Here" rows="4"></textarea>
+    <button onclick="submitComplaint()">Submit Complaint</button>
+    </div>
+    <div id="confirmation-message" style="display: none; text-align: center; margin-top: 20px;">
+      <h3>Your complaint has been raised successfully!</h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
